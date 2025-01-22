@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin-top: 50px;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #score {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Clicker Game</h1>
+    <button onclick="incrementScore()">Click me!</button>
+    <p id="score">Score: 0</p>
+
+    <script>
+        let score = 0;
+
+        // Function to increment the score
+        function incrementScore() {
+            score++; // Increase the score by 1
+            document.getElementById("score").textContent = "Score: " + score;
+        }
+    </script>
+
+</body>
+</html>
